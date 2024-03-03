@@ -15,7 +15,7 @@ struct ContentView: View {
                            endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/) //ignoramos los bordes y llenamos TODA la pantalla de azul
             VStack {
-                Text("Cupertino, CA")
+                Text("Lalín, PO")
                     .font(.system(size: 32, weight: .medium, design: .default))
                     .foregroundColor(.white)
                     .padding()
@@ -27,7 +27,7 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 180, height: 180)
                     
-                    Text("76º")
+                    Text("11º")
                         .font(.system(size: 70, weight: .medium))
                         .foregroundColor(.white)
                 }
@@ -35,25 +35,25 @@ struct ContentView: View {
 
                 
                 HStack(spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE",
+                    WeatherDayView(dayOfWeek: "MAR",
                                    imageName: "cloud.sun.fill",
-                                   temperature: 74)
+                                   temperature: 11)
                     
-                    WeatherDayView(dayOfWeek: "WED",
+                    WeatherDayView(dayOfWeek: "MIÉ",
                                    imageName: "cloud.sun.bolt.fill",
-                                   temperature: 70)
+                                   temperature: 9)
                     
-                    WeatherDayView(dayOfWeek: "THU",
+                    WeatherDayView(dayOfWeek: "JUE",
                                    imageName: "wind.snow",
-                                   temperature: 55)
+                                   temperature: 13)
                     
-                    WeatherDayView(dayOfWeek: "FRI",
+                    WeatherDayView(dayOfWeek: "VIE",
                                    imageName: "sun.snow.fill",
-                                   temperature: 60)
+                                   temperature: 2)
                     
-                    WeatherDayView(dayOfWeek: "SAT",
+                    WeatherDayView(dayOfWeek: "SÁB",
                                    imageName: "cloud.bolt.fill",
-                                   temperature: 42)
+                                   temperature: 10)
                 }
                 Spacer()
             }
